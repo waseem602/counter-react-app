@@ -1,7 +1,16 @@
-
-.dayLight {
-  background-color: lightyellow;
+.day {
+  color:black;
+  background-color: burlywood;
 }
-.night {
-  background-color: lightgray;
+.night{
+  color:white;
+  background-color: black;
+}
+.default {
+  color:black;
+  background-color: black;
+}
+b {
+  color: olivedrab;
+  font-size: larger;
 }

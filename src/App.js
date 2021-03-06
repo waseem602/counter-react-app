@@ -2,26 +2,51 @@ import React, {useState} from 'react';
 import './App.css';
 import {Message} from './Message';
 
-
 function App() {
+  
   let [count, setCount] = useState(0);
-  let [time, setTime]=useState(true);
+  let [time, setTime]=useState(false);
   
   return (
-    <div className={time ? 'dayLight' : 'night'}>
-      <h2>Good {time ? 'Morning':'Night'}</h2>
+  
+    <body className={time ? 'day' : 'night'}>
+    <div>
+
+      <h2 className={time ? 'day':'night'}>
+        Its {time ? 'day':'night'}
+      </h2>
     <Message counter={count}/>
+    
     <br />
     
-      <button onClick={
-        ()=>setCount(++count)
-        }>
-          Update Counter
+      <button onClick={()=>setCount(++count)}>
+          Counter +
       </button>
-      <button onClick={()=>setTime(!time)}>Update Time</button>
-      
+
+      <button onClick={()=>setCount(--count)}>
+          Counter -
+      </button>
+
+      <button onClick={()=>setCount(0)}>
+          Reset
+      </button>
+
+      <button onClick={()=>setTime(!time)}>
+        Change Day/Night
+      </button>
+
+      <br />
+      <br />
+      <br />
+        
     </div>
+    </body>
+    
+    
+    
   );
+
 }
+
 
 export default App;
