@@ -46,7 +46,7 @@ jobs:
         
       # Install Axios
       - name: Installing Axios
-        run: npm install axios
+        run: npm install axios --save
           
       - name: Publish to surge.sh
       # You may pin to the exact commit or the version.
