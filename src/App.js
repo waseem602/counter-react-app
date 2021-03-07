@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {Message} from './Message';
+import {Reddit} from './Reddit';
 
 function App() {
   
@@ -38,6 +39,8 @@ function App() {
       <br />
       <br />
       <br />
+
+      <Reddit/>
         
     </div>
     </body>
